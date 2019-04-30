@@ -7,8 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GMap.NET;
+using GMap.NET.MapProviders;
 
-namespace _0501Google
+
+namespace _0501MapSample
 {
     public partial class Form1 : Form
     {
@@ -17,41 +20,17 @@ namespace _0501Google
             InitializeComponent();
         }
 
-        private void Search_data_Click(object sender, EventArgs e)
+        private void BtnLoadIntoMap_Click(object sender, EventArgs e)
         {
-            string street = txt_street.Text;
-            string city = txt_city.Text;
-            string state = txt_state.Text;
-            string zip = txt_zip.Text;
-            try
-            {
-                StringBuilder queryaddress = new StringBuilder();
-                queryaddress.Append("http://maps.google.com/maps?q=");
-
-                if(street!=string.Empty)
-                {
-                    queryaddress.Append(street+","+"+");
-                }
-                if (city != string.Empty)
-                {
-                    queryaddress.Append(city + "," + "+");
-                }
-                if (state != string.Empty)
-                {
-                    queryaddress.Append(state + "," + "+");
-                }
-                if (zip != string.Empty)
-                {
-                    queryaddress.Append(zip + "," + "+");
-                }
-
-                webBrowser1.Navigate(queryaddress.ToString());
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message.ToString(), "Error");
-            }
+            map.DragButton = MouseButtons.Right;
+            map.MapProvider = GMapProviders.GoogleMap;
+            double lat = Convert.ToDouble(txtLat.Text);
+            double longt = Convert.ToDouble(txtLong.Text);
+            map.Position = new PointLatLng(lat, longt);
+            map.MinZoom = 1; // Minumum zoom Level
+            map.MaxZoom = 100; // Maximum Zoom Level
+            map.Zoom = 10; // current Zoom Level
         }
+
     }
 }
