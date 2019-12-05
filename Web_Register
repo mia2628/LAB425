@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+<body style="line-height: 150%; font-size: 11pt; background:rgb(240,250,255);"><center style="font-family: 나눔고딕;"> 
+  <br />
+  <br />
+  <form>
+		<fieldset style="width:500px; height:500px;">
+			<legend style="font-size:20pt;">회원가입</legend><br/>
+			<table style="font-size:17pt; line-height:180%;">
+				<tr>
+					<td>
+						<label for="id">ID</label>
+					</td>
+					<td colspan="2">
+						<input type="text" name="text" value="" style="width:150px; height:25px;" /> <br/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="PW">PW</label>
+					</td>
+					<td colspan="2">
+						<input type="password" name="password" value="" style="width:150px; height:25px;"/> <br/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="PWC">PW확인</label>
+					</td>
+					<td colspan="2">
+						<input type="password" name="password" value="" style="width:150px; height:25px;"/> <br/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="name">이름</label>
+					</td>
+					<td>
+						<input id="name" type="text" style="width:80px; height:25px;"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="Nick">닉네임</label>
+					</td>
+					<td>
+						<input id="Nick" type="text" style="width:100px; height:25px;"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						성별
+					</td>
+					<td colspan="2">
+						<input id="man" type="radio" name="gender" value="m" />
+						<label for="man">남자</label>
+						<input id="woman" type="radio" name="gender" value="w" />
+						<label for="woman">여자</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						생년월일
+					</td>
+					<td>
+						<select name="Year" style="width:60px; height:30px; font-size:11pt;" >
+							<option>2008</option>
+							<option>2007</option>
+							<option>2006</option>
+							<option>2005</option>
+							<option>2004</option>
+							<option>2003</option>
+							<option>2002</option>
+							<option>2001</option>
+							<option>2000</option>
+							<option>1999</option>
+							<option>1998</option>
+							<option>1997</option>
+							<option>1996</option>
+							<option>1995</option>
+							<option>1994</option>
+							<option>1993</option>
+							<option>1992</option>
+							<option>1991</option>
+							<option>1990</option>
+							<option>1989</option>
+							<option>1988</option>
+						</select> 년
+					</td>
+					<td>
+						<select name="Month" style="width:45px; height:30px; font-size:11pt;">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+							<option>8</option>
+							<option>9</option>
+							<option>10</option>
+							<option>11</option>
+							<option>12</option>
+						</select> 월
+					</td>
+					<td>
+						<select name="Days" style="width:45px; height:30px; font-size:11pt;">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+							<option>8</option>
+							<option>9</option>
+							<option>10</option>
+							<option>11</option>
+							<option>12</option>
+							<option>13</option>
+							<option>14</option>
+							<option>15</option>
+							<option>16</option>
+							<option>17</option>
+							<option>18</option>
+							<option>19</option>
+							<option>20</option>
+							<option>21</option>
+							<option>22</option>
+							<option>23</option>
+							<option>24</option>
+							<option>25</option>
+							<option>26</option>
+							<option>27</option>
+							<option>28</option>
+							<option>29</option>
+							<option>30</option>
+							<option>31</option>
+						</select> 일
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="mail">메일</label>
+					</td>
+					<td colspan="2">
+						<input id="mail" type="email" style="width:170px; height:25px;" />
+					</td>					
+				</tr>
+			</table>
+			<p>
+				<input type="submit" value="가입" style="width:80px; height:40px;"/>
+			</p>
+	</fieldset>
+</form>
+ </body>
+</html>
