@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>MainScene</title>
+
+	<style>
+	input {
+		vertical-align:middle;
+		}
+		input.form-text {
+		border: 1px solid #bcbcbc;
+		height:28px;
+		}
+		input.img-button {
+		background : url('');
+		border:none;
+		width:32px;
+		height:32px;
+		cursor:pointer;
+		}
+		</style>
+ </head>
+<body style="line-height: 150%; font-size: 11pt; background: rgb(232, 243, 249);"><center style="font-family: 나눔고딕;"> 
+  	<header>
+		<input type="image" src="Together.png" style="width:1000px; height:200px;" /> <br/>
+		<hr / style="width:1000px;">
+		<table style="width:1000px; height:30px; text-align:center;">
+			<tr style="background: rgb(232, 243, 249);">
+				<td><a href="#">게시판1</a></td>
+				<td><a href="#">게시판2</a></td>
+				<td><a href="#">게시판3</a></td>
+				<td><a href="#">게시판4</a></td>
+				<td><a href="#">게시판5</a></td>
+			</tr>
+		</table>
+	</header>
+		<table style="width:1000px; text-align:center;">
+			<tr>
+				<td style="width:200px; height:200px; border: 1px solid rgb(0, 0, 0); background: rgb(232, 243, 249);">
+					닉네임
+				</td>
+				<td>
+					<input type="button" class="img-button" style="width:800px; height:200px; border: 1px solid rgb(0, 0, 0); background: rgb(210, 230, 249); font-size:20pt; font-family:나눔고딕;" value="스터디"/>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2" style="border: 1px solid rgb(0, 0, 0); width:200px; height:400px; text-align:left; background: rgb(232, 243, 249);">
+						<ul>
+							<li><a href="#">게시판 1</li>
+							<li><a href="#">게시판 2</li>
+							<li><a href="#">게시판 3</li>
+							<li><a href="#">게시판 4</li>
+							<li><a href="#">게시판 5</li>
+						</ul>
+				</td>
+				<td>
+					<input type="button" class="img-button" style="width:800px; height:200px; border: 1px solid rgb(0, 0, 0); background: rgb(200, 243, 200); font-size:20pt; font-family:나눔고딕;" value="공모전" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" class="img-button" style="width:800px; height:200px; border: 1px solid rgb(0, 0, 0); background: rgb(232, 210, 220); font-size:20pt; font-family:나눔고딕;" value="대외활동" />
+				</td>
+			</tr>
+		</table>
+	<footer>
+		<hr / style="width:1000px;">
+		<table style="width:800px; height:80px;">
+			<tbody>
+				<tr>
+					<td style="text-align:center;">
+					mia2628@naver.com<br>
+					http://github.mia2628/HeoYunSeong
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	<hr / style="width:1000px;">
+
+ </body>
+</html>
